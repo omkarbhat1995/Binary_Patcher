@@ -49,7 +49,7 @@ int main(int argc,char *argv[]) {
   std::cin >> num_ele;
   for (int i = 0; i < num_ele; i++)
   {
-	  std::cout << "Please type a number: ";
+	  std::cout << "Please type a number: ";	///Overflow because no size check!
 	  std::cin >> test;
 	  array1[i]=test
   }
