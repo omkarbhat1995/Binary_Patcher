@@ -47,10 +47,10 @@ int main(int argc,char *argv[]) {
   int test;
   std::cout << "Enter number of elements to be sorted:" << std::endl;
   std::cin >> num_ele;
-  if (num_ele <= 10) {
+  if (num_ele <= 10) {									///No overflow because size check!
 	  for (int i = 0; i < num_ele; i++)
 	  {
-		  std::cout << "Please type a number: ";	///Overflow because no size check!
+		  std::cout << "Please type a number: ";	
 		  std::cin >> test;
 		  array1[i] = test
 	  }
