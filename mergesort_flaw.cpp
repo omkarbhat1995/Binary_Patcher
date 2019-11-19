@@ -54,14 +54,14 @@ int main(int argc,char *argv[]) {
 	  array1[i]=test;
   }
   int n = sizeof(array1)/sizeof(array1[0]);
- 
+
   std::cout << "Before Merge Sort :" << std::endl;
-  PrintArray(array1, n);
+  PrintArray(array1, num_ele);
  
-  MergeSort(array1, n);
+  MergeSort(array1, num_ele);
  
   std::cout << "After Merge Sort :" << std::endl;
-  PrintArray(array1, n);
+  PrintArray(array1, num_ele);
   return (0);
 }
  

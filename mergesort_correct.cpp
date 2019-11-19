@@ -45,7 +45,7 @@ int main(int argc,char *argv[]) {
   int num_ele;
   int array1[10];
   int test;
-  std::cout << "Enter number of elements to be sorted:" << std::endl;
+  std::cout << "Enter number of elements to be sorted (less than 10): " << std::endl;
   std::cin >> num_ele;
   if (num_ele <= 10) {									///No overflow because size check!
 	  for (int i = 0; i < num_ele; i++)
@@ -54,16 +54,18 @@ int main(int argc,char *argv[]) {
 		  std::cin >> test;
 		  array1[i] = test;
 	  }
-  }
-  int n = sizeof(array1)/sizeof(array1[0]);
- 
+  
+  
   std::cout << "Before Merge Sort :" << std::endl;
-  PrintArray(array1, n);
+  PrintArray(array1, num_ele);
  
-  MergeSort(array1, n);
+  MergeSort(array1, num_ele);
  
   std::cout << "After Merge Sort :" << std::endl;
-  PrintArray(array1, n);
+  PrintArray(array1, num_ele);
+}
+else
+std::cout<<"Cannot sort more than 10"<<std::endl;
   return (0);
 }
  
