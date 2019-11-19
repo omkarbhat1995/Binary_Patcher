@@ -40,28 +40,43 @@ void MergeSortHelper(int arr[], int lo, int hi){
 void MergeSort(int arr[], int arr_size){
     MergeSortHelper(arr, 0, arr_size-1);
 }
+struct Foo{
+int array[10];
+int num;
+};
  
-int main(int argc,char *argv[]) {
+Foo get_input()
+{
   int num_ele;
   int array1[10];
   int test;
-  std::cout << "Enter number of elements to be sorted:" << std::endl;
+  int a[2];
+  Foo returnval;
+  std::cout << "Enter number of elements to be sorted (less than 10): " << std::endl;
   std::cin >> num_ele;
-  for (int i = 0; i < num_ele; i++)
-  {
-	  std::cout << "Please type a number: ";	///Overflow because no size check!
-	  std::cin >> test;
-	  array1[i]=test;
-  }
-  int n = sizeof(array1)/sizeof(array1[0]);
-
+	  for (int i = 0; i < num_ele; i++)///No overflow because size check!
+	  {
+		  std::cout << "Please type a number: ";	
+		  std::cin >> test;
+		  returnval.array[i] = test;
+	  }
+   // returnval.array=array1;
+    returnval.num=num_ele;
+return returnval;
+}
+ 
+int main(int argc,char *argv[]) {
+ int array1[10]; 
+  int num_ele=0;
+  Foo a=get_input();
+  if (num_ele<=10){
   std::cout << "Before Merge Sort :" << std::endl;
-  PrintArray(array1, num_ele);
- 
-  MergeSort(array1, num_ele);
- 
+  PrintArray(a.array, num_ele);
+  MergeSort(a.array, num_ele);
   std::cout << "After Merge Sort :" << std::endl;
-  PrintArray(array1, num_ele);
+  PrintArray(a.array, num_ele);
+}
   return (0);
 }
+ 
  
