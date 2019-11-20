@@ -2,7 +2,7 @@
 
 ## Description:
 To transplant a patch (binary) from a different binary which has the same function and the same vulnerability.
-
+Finally we should be able to get a patched binary which works similar to the one before except for the patch part.
 ### Assumptions:
 1) We have 3 binaries:
 
