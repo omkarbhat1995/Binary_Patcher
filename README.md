@@ -1,7 +1,9 @@
 # Binary Patcher
 
+## Description:
+To transplant a patch (binary) from a different binary which has the same function and the same vulnerability.
 
-## Files
+### Files
 
 Mergesort_flaw.cpp: The file used to get unpatched version of Binary.<br />
 Mergesort_flaw.out: Unpatched Binary.<br />
@@ -10,7 +12,9 @@ Mergesort_correct.out: Patched Binary.<br />
 Quicksort_flawed.cpp: The file used to get unpatched Binary to be patched; has the same problem as mergesort_flaw.<br />
 Quciksort_flawed.out: Binary to be pathced.<br />
 
-## Authors:
+
+
+### Authors:
 Omkar Bhat<br />
 Jack Verrier<br />
 Zoya Yeprem<br />
