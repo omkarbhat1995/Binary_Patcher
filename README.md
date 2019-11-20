@@ -1,8 +1,8 @@
 # Binary Patcher
 
 ## Description:
-To transplant a patch (binary) from a different binary which has the same function and the same vulnerability.
-Finally we should be able to get a patched binary which works similar to the one before except for the patch part.
+To transplant a patch (binary) from a different binary that has the same function and the same vulnerability.
+Finally, we should be able to get a patched binary that works similar to the one before except for the patch part.
 ### Assumptions:
 1) We have 3 binaries:
 
@@ -10,7 +10,7 @@ Finally we should be able to get a patched binary which works similar to the one
 
 -A different program with same vulneararbility in the same function.
 
-2) Considering that the binary are not stripped and not optimised so that we can get function_names to know which function we have to patch.
+2) Considering that the binary is not stripped and not optimized so that we can get function_names to know which function we have to patch.
  
 3) Using G++ compiler.(due to some familiarity)
 
