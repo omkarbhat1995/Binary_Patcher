@@ -1,3 +1,6 @@
+/*
+Correct Mergesort with 
+*/
 #include <iostream>
 using namespace std;
 void PrintArray(int *array, int n) {
