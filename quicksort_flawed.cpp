@@ -1,3 +1,5 @@
+#include <iostream>
+using namespace std;
 void swap(int* a, int* b) 
 { 
     int t = *a; 
@@ -28,7 +30,12 @@ int partition (int arr[], int low, int high)
     swap(&arr[i + 1], &arr[high]); 
     return (i + 1); 
 } 
-  
+  /* Function to print an array */
+void PrintArray(int *array, int n) {
+  for (int i = 0; i < n; ++i)
+    std::cout << array[i] << " " << std::flush;
+  std::cout << std::endl;
+}
 /* The main function that implements QuickSort 
  arr[] --> Array to be sorted, 
   low  --> Starting index, 
@@ -47,14 +54,8 @@ void quickSort(int arr[], int low, int high)
     } 
 } 
 
-/* Function to print an array */
-void printArray(int arr[], int size) 
-{ 
-    int i; 
-    for (i=0; i < size; i++) 
-        printf("%d ", arr[i]); 
-    printf("n"); 
-} 
+
+ 
 struct Foo{
 int array[10];
 int num;
@@ -74,7 +75,6 @@ Foo get_input()
 		  std::cin >> test;
 		  returnval.array[i] = test;
 	  }
-   // returnval.array=array1;
     returnval.num=num_ele;
 return returnval;
 }
@@ -85,11 +85,10 @@ int main(int argc,char *argv[]) {
   Foo a=get_input();
   if (num_ele<=10){
   std::cout << "Before Merge Sort :" << std::endl;
-  printArray(a.array, num_ele);
-  quickSort(arr, 0, num_ele-1);
-  //MergeSort(a.array, num_ele);
+  PrintArray(a.array, a.num);
+  quickSort(a.array, 0, a.num-1);
   std::cout << "After Merge Sort :" << std::endl;
-  printArray(a.array, num_ele);
+  PrintArray(a.array, a.num);
 }
   return (0);
 }
