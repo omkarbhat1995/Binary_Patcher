@@ -4,14 +4,15 @@
 To transplant a patch (binary) from a different binary which has the same function and the same vulnerability.
 
 ### Assumptions:
-We have 3 binaries:
+1) We have 3 binaries:
 
 -A program with 2 binaries one before and one after the patch. 
 
 -A different program with same vulneararbility in the same function.
 
--Considering that the binary are not stripped and not optimised so that we can get function_names to know which function we have to patch.
-
+2) Considering that the binary are not stripped and not optimised so that we can get function_names to know which function we have to patch.
+ 
+3) Using G++ compiler.(due to some familiarity)
 
 ### Files
 
