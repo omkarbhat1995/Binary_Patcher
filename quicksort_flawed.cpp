@@ -31,7 +31,7 @@ int partition (int arr[], int low, int high)
     return (i + 1); 
 } 
   /* Function to print an array */
-void PrintArray(int *array, int n) {
+void PrintArray(int array [], int n) {
   for (int i = 0; i < n; ++i)
     std::cout << array[i] << " " << std::flush;
   std::cout << std::endl;
@@ -83,13 +83,11 @@ int main(int argc,char *argv[]) {
  int array1[10]; 
   int num_ele=0;
   Foo a=get_input();
-  if (num_ele<=10){
   std::cout << "Before Merge Sort :" << std::endl;
   PrintArray(a.array, a.num);
   quickSort(a.array, 0, a.num-1);
   std::cout << "After Merge Sort :" << std::endl;
   PrintArray(a.array, a.num);
-}
   return (0);
 }
 
