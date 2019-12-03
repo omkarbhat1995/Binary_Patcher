@@ -64,8 +64,6 @@ Foo get_input()
    // returnval.array=array1;
     returnval.num=num_ele;
 }//if 
-else
-std::cout<<"Cannot sort more than 10"<<std::endl;
 
 return returnval;
 }
