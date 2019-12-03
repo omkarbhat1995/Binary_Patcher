@@ -1,0 +1,2 @@
+"Tag","Session ID","Status","Type","Score","Confidence (log10)","Votes","# Conflicting","Multiple Source Labels?","Source Namespace","Source Label","Source Address","Multiple Dest Labels?","Dest Namespace","Dest Label","Dest Address","Source Length","Dest Length","Algorithm"
+"","15","","Function","1.000","1.325","0","0","","Global","__do_global_dtors_aux","00100b30","","Global","__do_global_dtors_aux","00100b30","51","51","Similar Symbol Name Match"
